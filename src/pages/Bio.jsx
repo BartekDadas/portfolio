@@ -41,11 +41,11 @@ const Bio = () => {
       <div className="courses-section">
         <h2>Finished Courses</h2>
         <ul className="courses-list">
-          <li>Complete Web Development Bootcamp</li>
-          <li>Advanced JavaScript: Concepts and Techniques</li>
-          <li>React - The Complete Guide</li>
-          <li>Software Testing and Quality Assurance</li>
-          <li>Mobile Development with Flutter</li>
+          <li>The Complete 2024 Software Testing Bootcamp</li>
+          <li>Machine Learing use in Flutter</li>
+          <li>Python Course for Beginners</li>
+          <li>Artefical Inteligence A-Z 2024</li>
+          <li>The complete Android 15 course</li>
         </ul>
       </div>
     </div>
