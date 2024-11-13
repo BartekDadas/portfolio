@@ -75,9 +75,6 @@ const Developer: React.FC = () => {
                 <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px'}}>
                   View Project
                 </a>
-                <a href={project.demo} target="_blank" rel="noopener noreferrer" style={{ backgroundColor: 'purple'}}>
-                  Demo
-                </a>
               </motion.div>
             ))}
           </div>

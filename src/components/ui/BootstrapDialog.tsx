@@ -1,40 +1,53 @@
-import React, { useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import React, { useState, useImperativeHandle, forwardRef } from 'react';
+import { Modal} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface BootstrapDialogProps {
-  title?: string;
-  content?: React.ReactNode;
+  defaultTitle?: string;
+  defaultContent?: React.ReactNode;
 }
 
-const BootstrapDialog: React.FC<BootstrapDialogProps> = ({ 
-  title = 'Dialog',
-  content = 'This is a dialog using React Bootstrap in React.'
-}) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+export interface BootstrapDialogHandle {
+  openDialog: (content: React.ReactNode, title: string) => void;
+  closeDialog: () => void;
+}
 
-  const openDialog: React.MouseEventHandler<HTMLButtonElement> = () => setIsOpen(true);
-  const closeDialog = () => setIsOpen(false);
+const BootstrapDialog = forwardRef<BootstrapDialogHandle, BootstrapDialogProps>(
+  ({ defaultTitle = 'Dialog', defaultContent = 'This is a dialog' }, ref) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [title, setTitle] = useState(defaultTitle);
+    const [content, setContent] = useState<React.ReactNode>(defaultContent);
 
-  return (
-    <div>
-      <Button variant="primary" onClick={openDialog}>
-        Open Dialog
-      </Button>
+    // Open dialog with specific content and title
+    const openDialog = (newContent: React.ReactNode, newTitle: string) => {
+      setContent(newContent);
+      setTitle(newTitle);
+      setIsOpen(true);
+    };
 
+    // Close dialog
+    const closeDialog = () => setIsOpen(false);
+
+    // Expose openDialog and closeDialog methods to parent components
+    useImperativeHandle(ref, () => ({
+      openDialog,
+      closeDialog
+    }));
+
+    return (
       <Modal show={isOpen} onHide={closeDialog}>
         <Modal.Header closeButton>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{content}</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={closeDialog}>
+          <button className="btn btn-secondary" onClick={closeDialog}>
             Close
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>
-    </div>
-  );
-};
+    );
+  }
+);
 
 export default BootstrapDialog;
