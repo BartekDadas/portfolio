@@ -1,0 +1,11 @@
+.email-link {
+  color: lightgreen;
+}
+
+.email-link:hover {
+  color: red;
+}
+
+.language-switcher {
+  margin-left: 1rem;
+}

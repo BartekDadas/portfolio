@@ -1,0 +1,89 @@
+.skills-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.headline {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.headline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #00a651;
+  border-radius: 2px;
+}
+
+.skills-list, .tools-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.skills-list li, .tools-list li {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4a5568;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+}
+
+.skills-list li::before, .tools-list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #00a651;
+  transition: all 0.3s ease;
+}
+
+.skills-list li:hover, .tools-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
+}
+
+.skills-list li:hover::before, .tools-list li:hover::before {
+  width: 100%;
+  opacity: 0.1;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .headline {
+    font-size: 2rem;
+  }
+
+  .skills-list, .tools-list {
+    grid-template-columns: 1fr;
+  }
+}
