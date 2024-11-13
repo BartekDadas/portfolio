@@ -13,7 +13,7 @@ const BootstrapDialog: React.FC<BootstrapDialogProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const openDialog = () => setIsOpen(true);
+  const openDialog: React.MouseEventHandler<HTMLButtonElement> = () => setIsOpen(true);
   const closeDialog = () => setIsOpen(false);
 
   return (
