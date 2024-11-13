@@ -5,7 +5,7 @@ import { Mesh } from 'three';
 const SpinningCube = () => {
   const meshRef = React.useRef<Mesh>(null);
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (meshRef.current) {
       meshRef.current.rotation.x += delta * 0.3;
       meshRef.current.rotation.y += delta * 0.3;
