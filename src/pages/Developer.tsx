@@ -12,7 +12,7 @@ const projects = [{
     description: "Text to Image Generator using the Recraft.ai v3 API",
     tech: ["Flutter", "Recraft", "GoogleAuth"],
     link: "https://github.com/BartekDadas/video_gen_public/tree/main",
-    demo: "https://subtle-frangipane-2991d4.netlify.app"
+    demo: "https://videogen-2533a.web.app/"
   }
 ];
 
@@ -74,6 +74,9 @@ const Developer: React.FC = () => {
                 </div>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px'}}>
                   View Project
+                </a>
+                <a href={project.demo} target="_blank" rel="noopener noreferrer" style={{backgroundColor: 'purple'}}>
+                  Demo
                 </a>
               </motion.div>
             ))}
