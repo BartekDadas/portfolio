@@ -1,129 +1,53 @@
-## dev21maker_s_application8
+# Portfolio Website
 
-Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
+Welcome to the repository for my personal portfolio website! This project serves as a showcase of my work, skills, and projects. It was developed through a collaborative effort involving DhiWise, Bolt.new, and myself.
 
-## Description
+**Please note:** This repository is for reference purposes only and is not intended to be cloned or deployed by others.
 
-- This React application is built using [create-react-app](https://create-react-app.dev/).
-- It uses [Shadcn UI](https://ui.shadcn.com/)
-- The application is generated in JavaScript.
+## Table of Contents
 
-## Pre-requisites
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Live Site](#live-site)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
-- [git](https://git-scm.com/) - v2.13 or greater
-- [NodeJS](https://nodejs.org/en/) - v16 or greater
-- [npm](https://www.npmjs.com/) - v6 or greater
+## About the Project
 
-## Running in dev environment
+This portfolio website is designed to highlight my professional journey, display my projects, and provide a platform for visitors to learn more about me. The site features:
 
-1. `cd YOUR_APPLICATION`
-2. `npm install`
-3. `npm start`
+- A responsive design for optimal viewing on various devices.
+- Sections dedicated to my skills, experience, and projects.
+- Contact information for potential collaborations or inquiries.
 
-## .env file
+## Built With
 
-This file contains various environment variables that you can configure.
+The development of this website was made possible through the collaboration of several tools and platforms:
 
-## Folder Structure
+- **DhiWise**: Utilized for efficient code generation and project scaffolding.
+- **Bolt.new**: Assisted in streamlining the development process with its robust features.
+- **Personal Contributions**: Custom features and personal touches added to reflect my unique style and preferences.
 
-```
-.
-├── package.json
-├── postcss.config.js
-├── components.json -------- Holds configuration for shadcn components
-├── public
-│   ├── assets
-│   │   ├── images --------- All Project Images
-│   │   └── fonts ---------- Project fonts
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── manifest.json
-│   └── robots.txt
-├── README.md
-├── src
-│   ├── App.jsx
-│   ├── components --------- UI and Detected Common Components
-│   │   └── ui ------------- All default shadcn components reside here
-│   │   ... ---------------- The rest of the components here are Detected Common Components
-│   ├── constants ---------- Project constants
-│   ├── theme --------- Theme configuration
-│   │   └── components ----- Component style
-│   │   └── foundations ---- Base styles
-│   ├── hooks -------------- Helpful Hooks
-│   ├── index.jsx
-│   ├── lib ---------------- Other non-ui related stuff
-│   │   └── ui ------------- Utility functions used in components/ui
-│   ├── pages -------------- All route pages
-│   ├── Routes.jsx ---------- Routing
-│   ├── styles
-│   │   └── index.css ------ Other Global Styles
-│   └── util
-│       └── index.jsx ------- Helpful utils
-└── tailwind.config.js ----- Entire theme config, colors, fonts etc.
-```
+## Live Site
 
-For the project to build, **these files must exist with exact filenames**:
+Explore the live version of my portfolio website here:
 
-- `public/index.html` is the page template;
-- `src/index.jsx` is the JavaScript entry point.
+[https://bartekdadas.github.io/portfolio/](https://bartekdadas.github.io/portfolio/)
 
-You may create subdirectories inside src.
+## Acknowledgements
 
-## Available Scripts
+I would like to express my gratitude to the following for their invaluable support in this project:
 
-In the project directory, you can run:
+- **DhiWise**: For providing an intuitive platform that accelerated the development process.
+- **Bolt.new**: For offering tools that enhanced the efficiency and quality of the project.
+- **OpenAI's ChatGPT**: For assisting in generating this `README.md` content.
 
-### `npm start`
+## Contact
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For any inquiries or feedback, feel free to reach out:
 
-### `npm test`
+- **Email**: [bartosz.dadas@wp.pl](mailto:bartosz.dadas@wp.pl)
+- **LinkedIn**: [Bartosz Dadas](https://www.linkedin.com/in/bartek-dadas-62a756281/)
+- **GitHub**: [BartekDadas](https://github.com/BartekDadas)
 
-Launches the test runner in the interactive watch mode.<br>
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time.
-
-## Installing a Dependency
-
-You can install any dependencies (for example, React Router) with `npm`:
-
-```sh
-npm install --save react-router
-```
-
-Alternatively you may use `yarn`:
-
-```sh
-yarn add react-router
-```
-
-## License
-
-MIT License
-
-Copyright (c) 2024 DhiWise
-
-Permission is hereby granted to any person obtaining a copy of this software and associated documentation files (the "Software"),to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-## DhiWise Support
-
-<a href="https://twitter.com/dhiwise"><img src="https://user-images.githubusercontent.com/35039342/55471524-8e24cb00-5627-11e9-9389-58f3d4419153.png" width="60" alt="DhiWise Twitter"></a>
-
-<a href="https://www.youtube.com/c/DhiWise"><img src="https://cdn.vox-cdn.com/thumbor/0kpe316UpZWk53iw3bOLoJfF6hI=/0x0:1680x1050/1400x1400/filters:focal(706x391:974x659):format(gif)/cdn.vox-cdn.com/uploads/chorus_image/image/56414325/YTLogo_old_new_animation.0.gif" width="60" alt="DhiWise YouTube"></a>
-
-<a href="https://discord.gg/UPhCetBkVu"><img src="https://user-images.githubusercontent.com/47489894/183043664-b01aac56-0372-458a-bde9-3f2a6bded21b.png" width="60" alt="DhiWise Discord"></a>
-
-<a href="https://docs.dhiwise.com/docs/react/intro"><img src="https://global-uploads.webflow.com/618e36726d3c0f19c9284e56/62383865d5477f2e4f6b6e2e_main-monogram-p-500.png" width="60" alt="DhiWise Documentation"></a>
+Thank you for visiting my portfolio repository!
