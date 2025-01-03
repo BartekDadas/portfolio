@@ -2,8 +2,6 @@
 
 Welcome to the repository for my personal portfolio website! This project serves as a showcase of my work, skills, and projects. It was developed through a collaborative effort involving DhiWise, Bolt.new, and myself.
 
-View the Portfolio Website (Hosted on Render): [Portfolio](https://portfolio-mb7f.onrender.com/)
-
 **Please note:** This repository is for reference purposes only and is not intended to be cloned or deployed by others.
 
 ## Table of Contents
@@ -32,9 +30,7 @@ The development of this website was made possible through the collaboration of s
 
 ## Live Site
 
-Explore the live version of my portfolio website here:
-
-[https://bartekdadas.github.io/portfolio/](https://bartekdadas.github.io/portfolio/)
+View the Portfolio Website (Hosted on Render): [Portfolio](https://portfolio-mb7f.onrender.com/)
 
 ## Acknowledgements
 
